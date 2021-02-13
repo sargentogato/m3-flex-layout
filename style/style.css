@@ -50,10 +50,10 @@ body {
 /** ============================================================         Mobile
 ==============================================================
 
-/** Menu - Header
+/** nav - Header
 ==================================
 */
-.box-menu-header {
+.box-nav-header {
   flex-grow: 1;
   flex-shrink: 1;
   width: 100%;
@@ -70,7 +70,7 @@ body {
   background-position: 0 calc(40% + calc(30% / 2));
 }
 
-.boxMenu {
+.boxnav {
   flex-grow: 1;
   flex-shrink: 1;
   flex-basis: 100%;
@@ -81,19 +81,19 @@ body {
   align-items: center;
 }
 
-.boxMenu__logo {
+.boxnav__logo {
   flex-basis: 10%;
 
   display: flex;
   justify-content: center;
 }
 
-.boxMenu__logo img {
+.boxnav__logo img {
   width: 100%;
   height: auto;
 }
 
-.boxMenu__menu {
+.boxnav__nav {
   flex-basis: 60%;
 
   display: flex;
@@ -113,28 +113,28 @@ body {
   font-size: 1vh;
 }
 
-.menu__item {
+.nav__item {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.menu__item > a {
+.nav__item > a {
   display: block;
 }
 
-.menu__link:hover {
+.nav__link:hover {
   transform: scale(1.2);
   color: #f73f52;
   font-weight: 600;
 }
 
-.menu__link span {
+.nav__link span {
   font-size: 1vh;
   padding-left: 0.1rem;
 }
 
-.boxMenu__socialMedia {
+.boxnav__socialMedia {
   flex-basis: 20%;
 
   display: flex;
@@ -214,6 +214,7 @@ body {
 
   display: flex;
   flex-direction: column;
+  -webkit-margin-after: 0.2rem;
   margin-block-end: 0.2rem;
 
   background-color: #d8d3d3;
@@ -252,6 +253,7 @@ body {
 
 .article__text,
 .read-more {
+  -webkit-margin-before: 1rem;
   margin-block-start: 1rem;
 }
 
@@ -301,10 +303,10 @@ body {
 ===============================================================
 */
 @media screen and (min-width: 768px) {
-  /** Menu - Header
+  /** nav - Header
   ==================================
   */
-  .boxMenu__logo {
+  .boxnav__logo {
     flex-basis: 5%;
   }
 }
@@ -314,18 +316,18 @@ body {
 */
 
 @media screen and (min-width: 1024px) {
-  .boxMenu__logo {
+  .boxnav__logo {
     flex-basis: 3%;
     margin-left: var(--margin-left-logo-1024);
   }
 
-  .boxMenu__menu {
+  .boxnav__nav {
     gap: 1rem;
     justify-content: flex-start;
     align-items: flex-end;
   }
 
-  .boxMenu__socialMedia {
+  .boxnav__socialMedia {
     flex-basis: auto;
     align-items: center;
     flex-direction: row;
