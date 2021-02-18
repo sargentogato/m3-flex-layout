@@ -34,6 +34,11 @@ li {
   --margin-left-logo-1024: 3rem;
 }
 
+img {
+  width: 100%;
+  height: auto;
+}
+
 body {
   height: 100vh;
 }
@@ -221,7 +226,7 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.articleBox__post img {
+.articleBox__post {
   width: 100%;
   height: auto;
 }
@@ -229,6 +234,10 @@ body {
 .article__image-box {
   position: relative;
   bottom: 0;
+}
+
+.article__image-box > img {
+  height: 8rem;
 }
 
 .article__image-footnote {
@@ -309,6 +318,10 @@ body {
   .boxnav__logo {
     flex-basis: 5%;
   }
+
+  .article__image-box > img {
+    height: 12rem;
+  }
 }
 
 /** ============================================================          Media Querie 1024px
@@ -354,6 +367,10 @@ body {
 
   .section__aside {
     flex-basis: 30%;
+  }
+
+  .article__image-box > img {
+    height: 18rem;
   }
 }
 
